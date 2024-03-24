@@ -1,0 +1,116 @@
+:root {
+  font-size: min(16px, 2vw);
+  font-size-adjust: none;
+}
+
+.myCoolText{
+  color: red;
+}
+
+
+
+
+body {
+  font-family: "ABCRepro-Medium", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: #ffffff;
+
+background-color: rgb(214, 214, 214);
+  background-attachment: fixed;
+  background-size: calc((100vw - 800px) / 2) auto;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  
+}
+
+.landing-text {
+  /* width: min(100%, 800px); */
+  width: min(800px, 50vw);
+  margin: 0 auto;
+  padding-bottom: calc(1rem + 20px);
+  padding-inline: 1rem;
+  text-align: center;
+ 
+    filter:blur(0.3px);
+
+  /*text-shadow: 2px 2px 10px rgb(0, 0, 0.7);*/
+}
+
+.landing-text h1 {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  filter:blur(0.4rem)
+ /* text-shadow: 2px 2px 10px rgb(0, 0, 0.3); */
+}
+
+.landing-text p {
+  margin-block: 1rem;
+  font-size: 1.5rem;
+  color: #000000;
+  line-height: 1.6;
+    text-align: center;
+    text-align: justify;
+    filter:blur(0.3px);
+
+  /*text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  text-wrap: pretty; */
+}
+
+.landing-text p span:hover {
+  color: red;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  }
+
+  header
+{
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white; 
+  /* position: fixed; */
+  position: sticky;
+  top : 0;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items:center;
+  display: flex;
+  gap: 1rem;
+
+  z-index: +1;
+}
+
+.header-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+header
+{
+  flex-direction: column;
+}
+}
