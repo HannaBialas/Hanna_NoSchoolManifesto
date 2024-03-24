@@ -83,7 +83,7 @@ overflow-y: auto;
 }
 
 .landing-text p span:hover {
-  color: red;
+  color: rgb(255, 0, 123);
 }
 
 
